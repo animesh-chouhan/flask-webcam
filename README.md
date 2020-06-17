@@ -11,8 +11,9 @@ https://www.loom.com/share/c185c4e4115d4e90a46d0d952361c6b8
 NOTE: The webapp currently only works locally on Firefox
 
 0. Clone and enter the repo on your local machine
-1. Create a virtual enviornment with `python3.7`
-2. Install the required dependencies `pip install -r requirements.txt`
+1. Create a virtual enviornment with `virtualenv -p python3.7 venv`
+2. Activate the virtualenv `source ./venv/bin/activate`
+3. Install the required dependencies `pip install -r requirements.txt`
 4. Run the webserver via `gunicorn -k eventlet -w 1 app:app --log-file=-`
 
 
